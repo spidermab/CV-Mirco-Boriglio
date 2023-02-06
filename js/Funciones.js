@@ -7,12 +7,14 @@ function apagarbotones() {
     document.getElementById('Estudios_M').className = "button button1";
     document.getElementById('Conocimientos').className = "button button1"; 
     document.getElementById('Conocimientos_M').className = "button button1";
+
+    document.getElementsByClassName('dropdown:hover').className = "dropdown-content";
 } 
 //Boton Datos
 document.getElementById('Datos').addEventListener('click', function() {
     apagarbotones();
     document.getElementById('Datos').className = "button button__seleccionado"; 
-    document.getElementById('Datos_M').className = "button button__seleccionado"; 
+    document.getElementById('Datos_M').className = "button button__seleccionado";     
 
     const seccion = document.querySelector('.card__visible');
     seccion.className = 'card__invisible'; 
