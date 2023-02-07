@@ -6,9 +6,7 @@ function apagarbotones() {
     document.getElementById('Estudios').className = "button button1"; 
     document.getElementById('Estudios_M').className = "button button1";
     document.getElementById('Conocimientos').className = "button button1"; 
-    document.getElementById('Conocimientos_M').className = "button button1";
-
-    document.getElementsByClassName('dropdown:hover').className = "dropdown-content";
+    document.getElementById('Conocimientos_M').className = "button button1";    
 } 
 //Boton Datos
 document.getElementById('Datos').addEventListener('click', function() {
@@ -29,7 +27,9 @@ document.getElementById('Datos_M').addEventListener('click', function() {
 
     const seccion = document.querySelector('.card__visible');
     seccion.className = 'card__invisible'; 
-    document.getElementById('Section_Datos').className = "card__visible";     
+    document.getElementById('Section_Datos').className = "card__visible";
+
+    document.getElementById('tarjetas').scrollIntoView();
 });
 
 //Boton Experiendia
@@ -51,7 +51,9 @@ document.getElementById('Experiencia_M').addEventListener('click', function() {
 
     const seccion = document.querySelector('.card__visible');
     seccion.className = 'card__invisible'; 
-    document.getElementById('Section_Experiencia').className = "card__visible";    
+    document.getElementById('Section_Experiencia').className = "card__visible";  
+    
+    document.getElementById('tarjetas').scrollIntoView();
 });
 
 //Boton Estudios
@@ -74,6 +76,8 @@ document.getElementById('Estudios_M').addEventListener('click', function() {
     const seccion = document.querySelector('.card__visible');
     seccion.className = 'card__invisible';    
     document.getElementById('Section_Estudios').className = "card__visible"; 
+
+    document.getElementById('tarjetas').scrollIntoView();
 });
 
 //Boton Conocimientos
@@ -95,5 +99,7 @@ document.getElementById('Conocimientos_M').addEventListener('click', function() 
 
     const seccion = document.querySelector('.card__visible');
     seccion.className = 'card__invisible';    
-    document.getElementById('Section_Conocimientos').className = "card__visible"; 
+    document.getElementById('Section_Conocimientos').className = "card__visible";
+    
+    document.getElementById('tarjetas').scrollIntoView();
 });
