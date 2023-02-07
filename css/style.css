@@ -431,7 +431,7 @@ footer {
   }  
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .fechaExperiencia {
     display: none;
   }
@@ -439,6 +439,7 @@ footer {
   .fechas__small {
     display: block;
     margin-bottom: 5px;
+    font-weight: 600;
   }
 
   .textoExperiencia {
