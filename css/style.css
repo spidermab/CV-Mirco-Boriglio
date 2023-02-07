@@ -291,7 +291,7 @@ footer {
 
 .fechaExperiencia {
   width: 15%;
-  margin-top: -10px;
+  /*margin-top: -10px;*/
   float: left;  
 }
 
@@ -302,6 +302,7 @@ footer {
 
 .seccion__experiencia{
   height: 20%;
+  display:flex;
 }
 
 .titulo__experiencia {
