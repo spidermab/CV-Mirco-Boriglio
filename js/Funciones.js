@@ -29,7 +29,7 @@ document.getElementById('Datos_M').addEventListener('click', function() {
     seccion.className = 'card__invisible'; 
     document.getElementById('Section_Datos').className = "card__visible";
 
-    document.getElementById('tarjetas').scrollIntoView();
+    document.getElementById('footer').scrollIntoView();
 });
 
 //Boton Experiendia
@@ -53,7 +53,7 @@ document.getElementById('Experiencia_M').addEventListener('click', function() {
     seccion.className = 'card__invisible'; 
     document.getElementById('Section_Experiencia').className = "card__visible";  
     
-    document.getElementById('tarjetas').scrollIntoView();
+    document.getElementById('footer').scrollIntoView();
 });
 
 //Boton Estudios
@@ -77,7 +77,7 @@ document.getElementById('Estudios_M').addEventListener('click', function() {
     seccion.className = 'card__invisible';    
     document.getElementById('Section_Estudios').className = "card__visible"; 
 
-    document.getElementById('tarjetas').scrollIntoView();
+    document.getElementById('footer').scrollIntoView();
 });
 
 //Boton Conocimientos
@@ -101,5 +101,5 @@ document.getElementById('Conocimientos_M').addEventListener('click', function() 
     seccion.className = 'card__invisible';    
     document.getElementById('Section_Conocimientos').className = "card__visible";
     
-    document.getElementById('tarjetas').scrollIntoView();
+    document.getElementById('footer').scrollIntoView();
 });

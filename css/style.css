@@ -435,10 +435,12 @@ footer {
     margin-top: -25px;
     background-color: var(--color-primary);
     color: transparent;
-    width: 100%;    
+    width: 99%;    
     margin-left: 0px;
     height: 5px;
     border-radius: 0px;
+    position: absolute;
+    bottom: 35px;
   }  
 
   .row:after {
