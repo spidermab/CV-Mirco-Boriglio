@@ -103,3 +103,23 @@ document.getElementById('Conocimientos_M').addEventListener('click', function() 
     
     document.getElementById('footer').scrollIntoView();
 });
+
+
+//Div desplegable
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "none") {
+            panel.style.display = "block";
+            document.getElementById('titulo_acordeon').style.borderRadius = "10px 10px 0px 0px";
+        } else {
+            panel.style.display = "none";
+            document.getElementById('titulo_acordeon').style.borderRadius = "10px";
+        }
+    });
+} 
+

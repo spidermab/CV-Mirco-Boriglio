@@ -338,6 +338,49 @@ footer {
   display: none;
 }
 
+.texto__negrita {
+  font-weight: 600;
+}
+
+
+
+/*Div desplegable*/
+
+.accordion {
+  background-color: #eee;
+  color: var(--color-primary);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 10px 10px 0px 0px;
+  font-size: inherit;
+}
+
+.panel {
+  padding: 10px 10px;
+  background-color: white;
+  display: block;
+  overflow: hidden;
+  border: solid #eee;
+  border-top: none;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode (+) */
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode sign (-) */
+}
+/*fin Div desplegable*/
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media (max-width: 1100px) {
