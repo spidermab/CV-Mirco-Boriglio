@@ -144,15 +144,6 @@ h3 {
   margin-top: -25px;
 }
 
-.footer__linea {
-  margin-top: -25px;
-  background-color: var(--color-primary);
-  color: transparent;
-  margin-left: 20px;
-  width: 300px;
-  border-radius: 0px 50px 50px 150px;
-}
-
 .separador {
   background-color: transparent;
   color: transparent;
@@ -302,9 +293,28 @@ footer {
   color: #868686;
 }
 
+.iconos__boton{
+  margin-right: 10px;
+}
+
 .texto__icono {
   margin-left: 30px;
 }
+
+.icono_unicode {  
+  font-size: 20px;
+  /*color: #868686;*/
+  color: var(--color-primary);
+  display: inline-block;
+  width: auto;
+}
+
+.texto_unicode{
+  margin-right: 1%;
+  display: inline-block;
+  width: 15%;
+  margin-left: 10px;  
+} 
 
 .fechaExperiencia {
   width: 15%;
@@ -317,10 +327,22 @@ footer {
   width: 80%;
 } 
 
+.section__doble {
+  display: flex;  
+  align-items: center;
+}
+
 .seccion__experiencia{
   height: 20%;
   display:flex;
+  align-items: center;
 }
+
+.margen__chico {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 
 .titulo__experiencia {
   font-weight: 400px;  
@@ -340,6 +362,7 @@ footer {
 
 .texto__negrita {
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 
@@ -474,18 +497,6 @@ footer {
     color: white;
   }
 
-  .footer__linea {
-    margin-top: -25px;
-    background-color: var(--color-primary);
-    color: transparent;
-    width: 99%;    
-    margin-left: 0px;
-    height: 5px;
-    border-radius: 0px;
-    position: absolute;
-    bottom: 35px;
-  }  
-
   .row:after {
     content: "";
     display: table;
@@ -515,6 +526,11 @@ footer {
   .textoExperiencia {
     width: 100%;
   }
+
+  .texto_unicode {
+    font-size: inherit;
+    width: 30%;
+  }
 }
 
 @media (max-width: 420px) {
@@ -525,4 +541,9 @@ footer {
   .dropdown {
     right: -20px;
   } 
+
+  .texto_unicode {
+    font-size: inherit;
+    width: 100%;
+  }
 }
